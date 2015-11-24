@@ -124,8 +124,13 @@ export var InnerSlider = React.createClass({
       nextArrow = (<NextArrow {...arrowProps} />);
     }
 
+
+
+    var sliderTopTemplate = this.props.sliderTopTemplate;
+    
     return (
       <div className={className}>
+        {sliderTopTemplate}
         <div
           ref='list'
           className="slick-list"
